@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "916909137213"
+let phoneNumber = "254700143167"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -63,14 +63,14 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋 Please type your WhatsApp number 😍\nFor example: +254700143167 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country🇰🇪 code of your WhatsApp Number, Example : +254700143167")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋 Please type your WhatsApp number 😍\nFor example: +254700143167 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -93,11 +93,11 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./sessions`)
              const xeonses = await  XeonBotInc.sendMessage(XeonBotInc.user.id, { document: sessionXeon, mimetype: `application/json`, fileName: `creds.json` })
              await XeonBotInc.sendMessage(XeonBotInc.user.id, { text: `⚠️Do not share this file with anybody⚠️\n
 ┌─❖
-│ Ohayo 😽
+│ 𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋
 └┬❖  
-┌┤✑  Thanks for using X-PairCode
+┌┤✑  Thanks for using 𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋
 │└────────────┈ ⳹        
-│©2020-2023 XeonBotInc 
+│©2024 𝐒𝚰𝐋𝛁𝚫 𝚻𝚵𝐂𝚮💋
 └─────────────────┈ ⳹\n\n ` }, {quoted: xeonses});
               await delay(1000 * 2) 
               process.exit(0)
