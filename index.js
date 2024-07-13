@@ -1,5 +1,3 @@
-//copy code? pls put my github name as credit
-//🖕 to those who copy without credit
 const makeWASocket = require("@whiskeysockets/baileys").default
 const qrcode = require("qrcode-terminal")
 const fs = require('fs')
